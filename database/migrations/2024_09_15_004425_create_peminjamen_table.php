@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('perangkat');
             $table->string('serialnumberhs');
             $table->string('keperluan');
+            $table->string('foto');
             $table->timestamps();
             $table->date('akhirpinjam');
         });
