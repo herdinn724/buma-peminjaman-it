@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('peminjamans', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->biginteger('nik');
+            $table->string('nik');
             $table->biginteger('notelpon');
             $table->enum('departemen', ['SHE','HR','FINANCE','LOGISTIK','PLANT','FS','IER','IT','ENG','MCD','BE','PRD','LCD']);
             $table->string('perangkat');
