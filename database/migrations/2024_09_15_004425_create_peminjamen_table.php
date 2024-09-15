@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('peminjamans', function (Blueprint $table) {
             $table->id();
-            $table->varchar('nama');
-            $table->bigint('nik');
-            $table->bigint('notelpon');
+            $table->string('nama');
+            $table->biginteger('nik');
+            $table->biginteger('notelpon');
             $table->enum('departemen', ['SHE','HR','FINANCE','LOGISTIK','PLANT','FS','IER','IT','ENG','MCD','BE','PRD','LCD']);
-            $table->varchar('perangkat');
-            $table->varchar('serialnumberhs');
-            $table->varchar('keperluan');
+            $table->string('perangkat');
+            $table->string('serialnumberhs');
+            $table->string('keperluan');
             $table->timestamps();
             $table->date('akhirpinjam');
         });
