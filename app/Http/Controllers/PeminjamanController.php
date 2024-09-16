@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PeminjamanController extends Controller
 {
     public function index(){
-        $data = Peminjaman::all();
+        $data = Peminjaman::paginate(5);
         return view('datapinjam', compact('data'));
     }
     public function tambahpinjam(){

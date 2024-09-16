@@ -25,12 +25,12 @@
                 <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->nama }}">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nik</label>
+                <label for="exampleInputEmail1" class="form-label">NIK</label>
                 <input type="text" name="nik" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->nik }}">
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">No HP</label>
-                <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->nounit }}">
+                <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->notelpon }}">
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Departemen</label>
@@ -50,6 +50,26 @@
                   <option value="PRD">PRD</option>
                   <option value="LCD">LCD</option>
                 </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Perangkat</label>
+                <input type="text" name="perangkat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->perangkat }}">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Hostname / Kode Assets</label>
+                <input type="text" name="serialnumberhs" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->serialnumberhs }}">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Keperluan</label>
+                <input type="text" name="keperluan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->keperluan }}">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Foto</label>
+                <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Akhir Pinjam</label>
+                <input type="date" name="akhirpinjam" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->akhirpinjam }}">
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
